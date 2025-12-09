@@ -1,0 +1,22 @@
+<!-- 
+Usando o *ngIf para mostrar condicionalmente o ícone de gato (fas fa-cat do Font Awesome).
+Adiciona o template HTML com botão personalizado com ícone de gato opcional  
+-->
+
+<button
+  [ngClass]="buttonClasses" 
+  [disabled]="isDisabled" 
+  (click)="onClick()"   
+>
+  <!-- Ícone de gato condicional -->
+  <i *ngIf="hasCatIcon" class="fas fa-cat icon-spacing"></i>
+
+  <!-- Texto do botão -->
+  {{ buttonText }}
+</button>
+
+
+
+
+
+
